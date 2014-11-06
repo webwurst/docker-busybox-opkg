@@ -30,6 +30,7 @@ RUN for CFGVAR in \
     BR2_PACKAGE_BRIDGE_UTILS \
     BR2_PACKAGE_IPROUTE2 \
     BR2_PACKAGE_IPTABLES \
+    BR2_PACKAGE_OPKG \
     ; do sed -i "s/# $CFGVAR is not set/$CFGVAR=y/" .config ; done
 RUN for CFGVAR in \
     CONFIG_NC \
